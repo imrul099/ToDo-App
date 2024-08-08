@@ -52,6 +52,11 @@ input{
     font-weight: 14px;
 }
 
+::placeholder{
+    font-size: 16px;
+    color: rgb(77, 55, 110);
+}
+
 button{
     border: none;
     outline: none;
@@ -85,11 +90,28 @@ ul li::before{
     left: 8px;
 }
 
-ul li .cheaked{
+ul li.cheaked{
     color: #555;
     text-decoration: line-through;
 }
 
-ul li .cheaked::before{
+ul li.cheaked::before{
     background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: rgb(77, 55, 110);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
 }
